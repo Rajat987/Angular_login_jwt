@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  login_API: {
+    login_url:'http://localhost:8085/generateToken'
+  }
 };
 
 /*

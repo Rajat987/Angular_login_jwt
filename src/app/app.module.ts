@@ -12,8 +12,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import{MatInputModule} from '@angular/material/input';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +24,8 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    AppRoutingModule,HttpClientModule,
+    BrowserAnimationsModule,ReactiveFormsModule,
     MatButtonModule, MatToolbarModule, MatFormFieldModule,MatInputModule,FormsModule
 
   ],
